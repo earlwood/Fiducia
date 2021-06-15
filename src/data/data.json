@@ -1,54 +1,54 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+        "title": "Servicios financieros a tu medida",
+        "paragraph": "Conoce nuestros servicios contables, sistemas de facturación y la intermediación de créditos hipotecarios y Pymes"
 
     },
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "paragraph": "Somos un equipo de profesionales con más de 15 años en el sector financiero, una firma de consultores capacitados en brindar servicios contables, de auditoria, de sistemas de facturación electrónica  y en la intermediación de créditos hipotecarios y Pymes. Tenemos alianzas estratégicas con las principales Instituciones Financieras de México, Sofomes, Arrendadoras, Notarias y  PACS, esto para brindarte la mejor experiencia de servicio.",
+        "paragraph2": "Queremos superar tus expectativas.",
         "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
+            "Valores",
+            "Experiencia",
+            "Tecnologia"
         ],
         "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
-        ]
+            "Agilidad",
+            "Innovación",
+            "Calidad en nuestros servicios"
+        ],
+        "Mision": "Ser una firma de consultores financieros que mejoren la forma de atender, entender y resolver problemas financieros.",
+        "Vision": "Consolidarnos como la firma de consultores financieros con mayor alcance a nivel nacional, dando la mayor rentabilidad a nuestros clientes y manteniendo su patrimonio a salvo.",
+        "Proposito": "Superar las expectativas de nuestros clientes y socios comerciales, teniendo un alto nivel de integridad en cada una de nuestras acciones."
     },
     "Services": [{
             "icon": "fa fa-wordpress",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "img": "img/servicios/contabilidad.png",
+            "name": "Contabilidad",
+            "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
+            "mas": ""
         },
         {
             "icon": "fa fa-cart-arrow-down",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "img": "img/servicios/auditoria.jpg",
+            "name": "Auditoría",
+            "text": "Brindamos el servicio de auditoria para tu negocio, el cual consiste en realizar un análisis formal de las cuentas de tu empresa por parte de nuestra firma auditora externa, con el fin de comprobar que dicha contabilidad es coherente internamente, generando una imagen fiel de la situación financiera de tu organización.",
+            "mas": ""
         },
         {
             "icon": "fa fa-cloud-download",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "img": "img/servicios/creH.png",
+            "name": "Creditos Hipotecarios",
+            "text": "Te ayudamos a elegir el mejor crédito hipotecario en el mercado, para que tu elección sea la mejor y tu patrimonio se encuentre bien resguardado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN",
+            "mas": ""
         },
         {
             "icon": "fa fa-language",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-plane",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-pie-chart",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "img": "img/servicios/creP.jpeg",
+            "name": "Créditos Pyme",
+            "text": "Te ayudamos a impulsar tu negocio, tomando en cuenta tu modelo de negocio y el destino que le quieras dar al recurso, te asesoramos para obtener el mejor credito Pyme del mercado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN. ",
+            "mas": "Leer Más..."
         }
 
 
@@ -105,12 +105,12 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
+        "address": "Monterrey, Nuevo Leon.",
+        "phone": "+52 81 3387 3961",
+        "email": "info@fiduciamonterrey.com",
+        "facebook": "https://www.facebook.com/CreditariaFIDUCIAMTY",
+        "instagram": "https://www.instagram.com/fiducia_monterrey/",
+        "linkedin": "https://www.linkedin.com/company/fiducia-monterrey"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

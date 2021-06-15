@@ -39,10 +39,10 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                <h2>Contactanos</h2>
+                <p>                  
+                  Por favor llena el formulario para enviarnos un correo electrónico
+                  y nos comunicaremos a la brevedad posible.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -54,7 +54,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Nombre'
                         required
                         onChange={handleChange}
                       />
@@ -68,7 +68,23 @@ export const Contact = (props) => {
                         id='email'
                         name='email'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='Correo Electrónico'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='phone'
+                        name='phone'
+                        className='form-control'
+                        placeholder='Teléfono o Celular'
                         required
                         onChange={handleChange}
                       />
@@ -82,7 +98,7 @@ export const Contact = (props) => {
                     id='message'
                     className='form-control'
                     rows='4'
-                    placeholder='Message'
+                    placeholder='Mensaje'
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -90,17 +106,17 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Enviar Mensaje
                 </button>
               </form>
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              <h3>Contacto Fiducia</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-map-marker'></i> Dirección
                 </span>
                 {props.data ? props.data.address : 'loading'}
               </p>
@@ -108,7 +124,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                  <i className='fa fa-phone'></i> Teléfono
                 </span>{' '}
                 {props.data ? props.data.phone : 'loading'}
               </p>
@@ -116,7 +132,7 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-envelope-o'></i> Email
+                  <i className='fa fa-envelope-o'></i> Correo Electrónico
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
               </p>
@@ -127,18 +143,18 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
+                    <a href={props.data ? props.data.facebook : '/'} target="_blank" rel="noreferrer">
                       <i className='fa fa-facebook'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
+                    <a href={props.data ? props.data.instagram : '/'} target="_blank" rel="noreferrer">
+                      <i className='fa fa-instagram'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
+                    <a href={props.data ? props.data.linkedin : '/'} target="_blank" rel="noreferrer">
+                      <i className='fa fa-linkedin'></i>
                     </a>
                   </li>
                 </ul>

@@ -33,7 +33,7 @@ h5 {
 	line-height: 20px;
 }
 p {
-	font-size: 15px;
+	font-size: 17px;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -166,6 +166,21 @@ hr {
 	transition: all 0.5s linear;
 	border: 0;
 }
+.btn-custom-services {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #5ca9fb;
+	background-image: linear-gradient(to right, #637d9e 0%, #6372ff 100%);
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
@@ -199,7 +214,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	font-size: 82px;
+	font-size: 72px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -212,13 +227,19 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro p {
 	color: #fff;
 	font-size: 22px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;
 	margin: 0 auto;
 	margin-bottom: 60px;
 }
+#contactanos{
+	color: #fff;
+	font-size: 26px;
+	font-weight: 500;
+	margin: 15 auto;
+}
 header .intro-text {
-	padding-top: 350px;
+	padding-top: 170px;
 	padding-bottom: 200px;
 	text-align: center;
 }
@@ -252,7 +273,7 @@ header .intro-text {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#about h2::after {
+#about .nos::after {
 	position: absolute;
 	content: "";
 	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -261,6 +282,7 @@ header .intro-text {
 	bottom: 0;
 	left: 0;
 }
+
 #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
@@ -271,7 +293,7 @@ header .intro-text {
 	content: '\f00c';
 	font-family: 'FontAwesome';
 	color: #5ca9fb;
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: 300;
 	padding-right: 8px;
 }
@@ -288,8 +310,8 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 100px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	padding: 60px 0;
+	background: linear-gradient(to right, #7381fc 0%, #1a85f8 100%);
 	color: #fff;
 }
 #services .service-desc {
@@ -328,6 +350,13 @@ header .intro-text {
 }
 #services .service-desc {
 	margin-bottom: 40px;
+}
+
+#services .img-service{
+	width: 240px;
+	height: 170px;
+	border-radius: 50%;
+	box-shadow: 4px 4px 13px rgb(17, 17, 17);
 }
 /* Portfolio Section */
 #portfolio {
@@ -578,3 +607,47 @@ color: #777;
 	margin: 50px 0;
 }
 }
+
+/* for desktop */
+.whatsapp_float {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	width: 60px;
+  	height: 60px;
+	background-color: #25d366;
+	/* background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
+	padding: 14px 34px;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	box-shadow: 2px 2px 3px #999;
+	/* z-index: 100; */
+	transition: all 0.5s linear;
+  }
+  /* letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0; */
+  
+  .whatsapp-icon {
+	margin-top: 16px;
+  }
+  
+  /* for mobile */
+  @media screen and (max-width: 767px) {
+	.whatsapp-icon {
+	  margin-top: 10px;
+	}
+  
+	.whatsapp_float {
+	  width: 40px;
+	  height: 40px;
+	  font-size: 22px;
+	}
+  }
