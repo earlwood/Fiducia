@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-export const Services = (props) => {
+export const Services = ({data}) => {
   
   const history = useHistory();
 
@@ -12,12 +12,11 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Nuestros Servicios</h2>
-          
+          <h2>Nuestros Servicios</h2>          
         </div>
         <div className='row'>
-          {props.data
-            ? props.data.map((d, i) => (
+          {data
+            ? data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className='col-md-6'>
                   {' '}
                   <img className='img-service' src={d.img} alt="..." />

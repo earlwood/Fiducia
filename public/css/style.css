@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -6,7 +6,7 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
-}
+} */
 h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
@@ -64,8 +64,12 @@ hr {
 	margin-bottom: 20px;
 	border: 0;
 }
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
 /* Navigation */
-#menu {
+/* #menu {
 	padding: 15px;
 	transition: all 0.8s;
 }
@@ -150,68 +154,23 @@ hr {
 }
 .section-title p {
 	font-size: 18px;
-}
-.btn-custom {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-	padding: 14px 34px;
-	letter-spacing: 1px;
-	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
-	border-radius: 25px;
-	transition: all 0.5s linear;
-	border: 0;
-}
-.btn-custom-services {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #637d9e 0%, #6372ff 100%);
-	padding: 14px 34px;
-	letter-spacing: 1px;
-	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
-	border-radius: 25px;
-	transition: all 0.5s linear;
-	border: 0;
-}
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	color: #fff;
-	background-image: none;
-	background-color: #6372ff;
-}
-.btn:active, .btn.active {
-	background-image: none;
-	outline: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
-	outline: none;
-	outline-offset: none;
-}
+} */
 /* Header Section */
-.intro {
-	display: table;
+/* .intro { */
+	/* display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
+	background: url(../img/intro-bg.jpg) center no-repeat;
 	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
+	background-size: cover; */
+	/* -webkit-background-size: cover; */
+	/* -moz-background-size: cover; */
+	/* -o-background-size: cover; */
+/* } */
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
 }
-.intro h1 {
+#header h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
 	font-size: 72px;
@@ -220,21 +179,22 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 0;
 	margin-bottom: 10px;
 }
+/* 
 .intro h1 span {
 	font-weight: 800;
 	color: #5ca9fb;
-}
-.intro p {
+} */
+#parag {
 	color: #fff;
 	font-size: 22px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 30px;
-	margin: 0 auto;
-	margin-bottom: 60px;
+	margin: 30px 25px;
+	/* margin-bottom: 60px; */
 }
 #contactanos{
-	color: #fff;
-	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-size: 32px;
 	font-weight: 500;
 	margin: 15 auto;
 }
@@ -242,6 +202,183 @@ header .intro-text {
 	padding-top: 170px;
 	padding-bottom: 200px;
 	text-align: center;
+}
+
+/* for desktop */
+.whatsapp_float {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	width: 60px;
+  	height: 60px;
+	background-color: #25d366;
+	/* background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
+	padding: 14px 34px;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	box-shadow: 2px 2px 3px #999;
+	/* z-index: 100; */
+	transition: all 0.5s linear;
+  }
+  /* letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0; */
+  
+  .whatsapp-icon {
+	margin-top: 16px;
+  }
+    
+
+/* Extra large screens */
+@media screen and (min-width: 993px) and (max-width: 1500px ){
+	#header h1 {
+		font-family: 'Raleway', sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 68px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-top: 35px;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#header img{
+		max-height: 600px;
+	}
+	
+	#parag{
+		font-size: 26px;
+		margin: 20px 35px;
+		font-weight: 600;
+		color:#fff;
+	}
+}
+
+/* Large screens */
+@media screen and (min-width: 768px) and (max-width: 992px){
+	#header h1 {
+		font-size: 50px;
+		font-weight: 600;
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+	}
+
+	#header img{
+		max-height: 555px;
+	}
+
+	#parag{
+		font-size: 20px;
+		margin: 20px 10px 0 10px;
+		font-weight: 600;
+		color:#fff;
+	}
+
+	#contactanos{
+		color: rgb(255, 255, 255);
+		font-size: 28px;
+		font-weight: 600;
+		margin: 20px auto 15px ;
+	}
+
+	.whatsapp-icon {
+		margin-top: 10px;
+		
+  	}
+
+	.whatsapp_float {
+		width: 20px;
+		height: 20px;
+		font-size: 30px;
+	}
+}
+
+/* Medium screens */
+@media screen and (min-width: 503px) and (max-width: 768px){
+	#header h1 {
+		font-size: 32px;
+		font-weight: 600;
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+	}
+
+	#parag{
+		font-size: 20px;
+		margin: 20px 10px 0 10px;
+		font-weight: 500;
+		color:#fff;
+	}
+
+	#contactanos{
+		color: rgb(0, 0, 0);
+		font-size: 28px;
+		font-weight: 500;
+		margin: 20px auto 15px ;
+	}
+
+	.intro p {
+		font-size: 24px;
+		margin: 10px 10px 0 10px;
+	}
+
+	.whatsapp-icon {
+		margin-top: 10px;
+		
+  	}
+
+	.whatsapp_float {
+		width: 20px;
+		height: 20px;
+		font-size: 30px;
+	}
+}
+
+/* Small screens */
+@media screen and (max-width: 502px){
+	
+	#header h1 {
+		font-size: 28px;
+		font-weight: 600;
+		color: rgb(255, 255, 255);
+		text-transform: uppercase;
+	}
+
+	#parag{
+		font-size: 15px;
+		margin: 20px 10px 0 10px;
+		font-weight: 500;
+		color:#fff;
+	}
+
+	#contactanos{
+		color: rgb(0, 0, 0);
+		font-size: 28px;
+		font-weight: 500;
+		margin: 20px auto 15px ;
+	}
+
+	.intro p {
+		font-size: 24px;
+		margin: 10px 10px 0 10px;
+	}
+
+	.whatsapp-icon {
+		margin-top: 10px;
+		
+  	}
+
+	.whatsapp_float {
+		width: 20px;
+		height: 20px;
+		font-size: 30px;
+	}
 }
 /* Features Section */
 #features {
@@ -283,12 +420,12 @@ header .intro-text {
 	left: 0;
 }
 
-#about .about-text li {
+/* #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
 	list-style: none;
 	padding: 0;
-}
+} */
 #about .about-text li:before {
 	content: '\f00c';
 	font-family: 'FontAwesome';
@@ -308,10 +445,45 @@ header .intro-text {
 	line-height: 24px;
 	margin: 30px 0;
 }
+
+/* Extra large screens */
+@media (min-width: 1200px){
+	
+}
+
+/* Large screens */
+@media (min-width: 992px){
+	
+}
+
+/* Medium screens */
+@media (min-width: 768px){
+	
+}
+
+/* Small screens */
+@media (min-width: 576px){
+	
+	/* body{
+		background-color: orange;
+	} */
+}
+/* Extra Small screens */
+@media (max-width: 575px){
+	
+
+	#about .about-text p {
+		line-height: 24px;
+		margin: 30px 0;
+		width: 100%;
+	}
+}
+
+
 /* Services Section */
 #services {
 	padding: 60px 0;
-	background: linear-gradient(to right, #7381fc 0%, #1a85f8 100%);
+	background-color: #216aa1;
 	color: #fff;
 }
 #services .service-desc {
@@ -338,7 +510,7 @@ header .intro-text {
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	border-radius: 50%;
 	color: #fff;
-	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+	box-shadow: 10px 10px 10px rgba(46, 45, 45, 0.05);
 }
 #services h3 {
 	font-weight: 500;
@@ -356,8 +528,161 @@ header .intro-text {
 	width: 240px;
 	height: 170px;
 	border-radius: 50%;
-	box-shadow: 4px 4px 13px rgb(17, 17, 17);
+	box-shadow: 2px 2px 5px rgb(17, 17, 17);
 }
+
+.btn-custom {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #5ca9fb;
+	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+.btn-custom-services {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #1dca72;
+	padding: 14px 34px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+
+.btn-custom-pymes {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #1dca72;
+	/* background-image: linear-gradient(to right, #637d9e 0%, #6372ff 100%); */
+	padding: 20px 50px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 25px;
+	transition: all 0.5s linear;
+	border: 0;
+}
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	color: #fff;
+	background-image: none;
+	background-color: #ffffff;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+
+/* Pymes Section */
+#pymes {
+	padding: 150px 0;
+	background-color: #216aa1;
+	color: #fff;
+}
+#pymes .service-desc {
+	margin: 10px 10px 20px;
+}
+#pymes h2 {
+	color: #fff;
+}
+#pymes .section-title h2::after {
+	position: absolute;
+	content: "";
+	background: rgba(255,255,255,.3);
+	height: 4px;
+	width: 60px;
+	bottom: 0;
+	margin-left: -30px;
+	left: 50%;
+}
+.pym{
+	font-weight: 500;
+	font-size: 150%;
+}
+
+.logo-img {
+	/* width: min(50vw, 200px); */
+	/* background: #000;
+	height: 80px;
+	justify-content: space-between;
+	display: flex;
+	z-index: 10; */
+	/* padding: 0.5rem calc((100vw - 1000px) / 2); */
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0 1rem;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+  
+}
+/* #pymes i.fa {
+	font-size: 42px;
+	width: 120px;
+	height: 120px;
+	padding: 40px 0;
+	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	border-radius: 50%;
+	color: #fff;
+	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+} */
+#pymes h3 {
+	font-weight: 500;
+	padding: 5px 0;
+	color: #fff;
+}
+#pymes p {
+	color: rgba(255,255,255,.75);
+}
+#pymes .service-desc {
+	margin-bottom: 40px;
+}
+
+#pymes .img-service{
+	width: 240px;
+	height: 170px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgb(17, 17, 17);
+}
+
+#pymes li {
+	margin-bottom: 6px;
+	text-align: center;
+	/* list-style: disc; */
+	padding: 0;
+}
+
+#pymes li:before {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+	padding-right: 8px;
+}
+
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
@@ -463,7 +788,8 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	/* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+	background-color: #216aa1;
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
@@ -583,8 +909,44 @@ color: #777;
 	transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-	color: #608dfd;
+	color: #245f8d;
 	background: #fff;
+}
+/* Media Queries */
+/* Extra large screens */
+@media (min-width: 1200px){
+	
+}
+
+/* Large screens */
+@media (min-width: 992px){
+	
+}
+
+/* Medium screens */
+@media (min-width: 768px){
+	
+}
+
+/* Small screens */
+@media (min-width: 576px){
+	
+	/* body{
+		background-color: orange;
+	} */
+}
+/* Extra Small screens */
+@media (max-width: 575px){
+	
+	#contact #cont{
+		text-align: center;
+	}
+
+	/* #about .about-text p {
+		line-height: 24px;
+		margin: 30px 0;
+		width: 100%;
+	} */
 }
 /* Footer Section*/
 #footer {
@@ -608,46 +970,3 @@ color: #777;
 }
 }
 
-/* for desktop */
-.whatsapp_float {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: #fff;
-	width: 60px;
-  	height: 60px;
-	background-color: #25d366;
-	/* background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
-	padding: 14px 34px;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 500;
-	box-shadow: 2px 2px 3px #999;
-	/* z-index: 100; */
-	transition: all 0.5s linear;
-  }
-  /* letter-spacing: 1px;
-	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
-	border-radius: 25px;
-	transition: all 0.5s linear;
-	border: 0; */
-  
-  .whatsapp-icon {
-	margin-top: 16px;
-  }
-  
-  /* for mobile */
-  @media screen and (max-width: 767px) {
-	.whatsapp-icon {
-	  margin-top: 10px;
-	}
-  
-	.whatsapp_float {
-	  width: 40px;
-	  height: 40px;
-	  font-size: 22px;
-	}
-  }

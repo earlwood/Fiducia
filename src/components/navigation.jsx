@@ -1,73 +1,33 @@
-export const Navigation = (props) => {
-  return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
-      <div className='container'>
-        <div className='navbar-header'>
-          <button
-            type='button'
-            className='navbar-toggle collapsed'
-            data-toggle='collapse'
-            data-target='#bs-example-navbar-collapse-1'
-          >
-            {' '}
-            <span className='sr-only'>Toggle navigation</span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-          </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            <img src="../../public/img/logo.jpeg" alt="logo" />
-          </a>{' '}
-        </div>
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
-        <div
-          className='collapse navbar-collapse'
-          id='bs-example-navbar-collapse-1'
-        >
-          <ul className='nav navbar-nav navbar-right'>
-            <li>
-              <a href='#about' className='page-scroll'>
-                Nosotros
-              </a>
-            </li>
-            <li>
-              <a href='#services' className='page-scroll'>
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a href='#blog' className='page-scroll'>
-                Blog
-              </a>
-            </li>
-            {/* <li>
-              <a href='#features' className='page-scroll'>
-                Features
-              </a>
-            </li>
-            <li>
-              <a href='#portfolio' className='page-scroll'>
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href='#team' className='page-scroll'>
-                Team
-              </a>
-            </li>*/}
-            <li>
-              <a href='#contact' className='page-scroll'>
-                Contacto
-              </a>
-            </li> 
-          </ul>
-        </div>
-      </div>
-    </nav>
-  )
-}
+export const Navigation = () => {
+  return (
+    <>
+      <Navbar fixed='top' collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand>
+          <Link to='/#page-top'>
+          <img
+            src="/img/logo.jpeg"
+            width="80"
+            height="80"
+            className="img-fluid rounded "
+            alt="Fiducia logo"
+          />
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto mr-5">
+            <Nav.Link as={Link} to='/#about'>Nosotros</Nav.Link>
+            <Nav.Link as={Link} to='/#services'>Servicios</Nav.Link>
+            <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
+            <Nav.Link as={Link} to='/#contact'>Contacto</Nav.Link>            
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <br /><br />
+    </>
+  );
+};

@@ -1,18 +1,11 @@
-import { useState, useEffect } from 'react'
-import { Navigation } from './components/navigation'
-import { Header } from './components/header'
-// import { Features } from './components/features'
-import { About } from './components/about'
-import { Services } from './components/services'
-// import { Gallery } from './components/gallery'
-// import { Testimonials } from './components/testimonials'
-// import { Team } from './components/Team'
-import { Contact } from './components/contact'
-import { Pymes } from './components/pymes'
-
-import JsonData from './data/data.json'
+import React, {useState, useEffect} from 'react';
+import { Navigation } from './components/navigation';
+import Pymes from './components/pymes';
+import Home from './components/home';
 import SmoothScroll from 'smooth-scroll';
-import {BrowserRouter as Router, Route } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Blog from './components/blog';
+import JsonData from './data/data.json';
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -20,27 +13,28 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 })
 
 const App = () => {
+  
   const [landingPageData, setLandingPageData] = useState({})
+  
   useEffect(() => {
-    setLandingPageData(JsonData)
+      setLandingPageData(JsonData)
   }, [])
 
   return (
-    <div>
+    // <div>
       <Router>
-        <Route path="/pymes" component={Pymes} />
-        <Navigation />
-        <Header data={landingPageData.Header} />
-        <About data={landingPageData.About} />
-        <Services data={landingPageData.Services} />
-        <div style={{marginTop: '100'}}></div>
-        {/* <Features data={landingPageData.Features} /> */}
-        {/* <Gallery /> */}
-        {/* <Testimonials data={landingPageData.Testimonials} /> */}
-        {/* <Team data={landingPageData.Team} /> */}
-        <Contact data={landingPageData.Contact} />
+        <div >
+          <Navigation />
+          <Switch>
+            <Route path="/pymes"><Pymes data={landingPageData.Pymes} /></Route>      
+            <Route path="/blog" component={Blog} />
+            <Route component={Home}/>
+
+          </Switch>
+        </div>
+        
       </Router>
-    </div>
+    // </div>
   )
 }
 

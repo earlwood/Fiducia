@@ -23,36 +23,72 @@
         "Proposito": "Superar las expectativas de nuestros clientes y socios comerciales, teniendo un alto nivel de integridad en cada una de nuestras acciones."
     },
     "Services": [{
+        "icon": "fa fa-wordpress",
+        "img": "img/servicios/contabilidad.png",
+        "name": "Contabilidad",
+        "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
+        "mas": ""
+    },
+    {
+        "icon": "fa fa-cart-arrow-down",
+        "img": "img/servicios/auditoria.jpg",
+        "name": "Auditoría",
+        "text": "Brindamos el servicio de auditoria para tu negocio, el cual consiste en realizar un análisis formal de las cuentas de tu empresa por parte de nuestra firma auditora externa, con el fin de comprobar que dicha contabilidad es coherente internamente, generando una imagen fiel de la situación financiera de tu organización.",
+        "mas": ""
+    },
+    {
+        "icon": "fa fa-cloud-download",
+        "img": "img/servicios/creH.png",
+        "name": "Creditos Hipotecarios",
+        "text": "Te ayudamos a elegir el mejor crédito hipotecario en el mercado, para que tu elección sea la mejor y tu patrimonio se encuentre bien resguardado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN",
+        "mas": ""
+    },
+    {
+        "icon": "fa fa-language",
+        "img": "img/servicios/creP.jpeg",
+        "name": "Créditos Pyme",
+        "text": "Te ayudamos a impulsar tu negocio, tomando en cuenta tu modelo de negocio y el destino que le quieras dar al recurso, te asesoramos para obtener el mejor credito Pyme del mercado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN. ",
+        "mas": "Leer Más..."
+    }],
+    "Pymes": [
+        {
             "icon": "fa fa-wordpress",
-            "img": "img/servicios/contabilidad.png",
-            "name": "Contabilidad",
+            "img": "img/pymes/pyme.png",
+            "name": "Pyme",
             "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
-            "mas": ""
+            "pyme1": [
+                "Arrendamiento Financiero.",
+                "Factoraje a clientes.",
+                "Credito Simple."
+            ],
+            "pyme2": [
+                "Factoraje a proveedores.",
+                "Consultorio Medicos.",
+                "Naves industriales."
+            ]
         },
         {
             "icon": "fa fa-cart-arrow-down",
-            "img": "img/servicios/auditoria.jpg",
-            "name": "Auditoría",
+            "img": "img/pymes/fact.jpg",
+            "name": "Facturación Electrónica Factureya",
             "text": "Brindamos el servicio de auditoria para tu negocio, el cual consiste en realizar un análisis formal de las cuentas de tu empresa por parte de nuestra firma auditora externa, con el fin de comprobar que dicha contabilidad es coherente internamente, generando una imagen fiel de la situación financiera de tu organización.",
-            "mas": ""
-        },
-        {
-            "icon": "fa fa-cloud-download",
-            "img": "img/servicios/creH.png",
-            "name": "Creditos Hipotecarios",
-            "text": "Te ayudamos a elegir el mejor crédito hipotecario en el mercado, para que tu elección sea la mejor y tu patrimonio se encuentre bien resguardado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN",
-            "mas": ""
-        },
-        {
-            "icon": "fa fa-language",
-            "img": "img/servicios/creP.jpeg",
-            "name": "Créditos Pyme",
-            "text": "Te ayudamos a impulsar tu negocio, tomando en cuenta tu modelo de negocio y el destino que le quieras dar al recurso, te asesoramos para obtener el mejor credito Pyme del mercado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN. ",
-            "mas": "Leer Más..."
+            "pyme1": [
+                "Facturas electrónicas.",
+                "Recibos de honorarios.",
+                "Recibos de arrendamiento.",
+                "Recibos de nomina.",
+                "Recibos de pago."
+            ],
+            "pyme2": [
+                "Notas de créditos.",
+                "Recibo de donativo.",
+                "Cartas Porte.",
+                "Notas de credito.",
+                "Formato para gasolineras."
+            ]
         }
-
-
     ],
+    
     "Testimonials": [{
             "img": "img/testimonials/01.jpg",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
@@ -110,7 +146,13 @@
         "email": "info@fiduciamonterrey.com",
         "facebook": "https://www.facebook.com/CreditariaFIDUCIAMTY",
         "instagram": "https://www.instagram.com/fiducia_monterrey/",
-        "linkedin": "https://www.linkedin.com/company/fiducia-monterrey"
+        "linkedin": "https://www.linkedin.com/company/fiducia-monterrey",
+        "services":[
+            "Contabilidad",
+            "Auditoría",
+            "Creditos Hipotecarios",
+            "Créditos Pyme"
+        ]
     },
     "Features": [{
             "icon": "fa fa-comments-o",
