@@ -174,5 +174,8 @@
             "title": "Lorem ipsum",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         }
-    ]
+    ],
+    "Blog": {
+        "img": "img/blog/coming_soon/construyendo.jpg"
+    }
 }
