@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-
+import swal from '@sweetalert/with-react';
 
 import JsonData from '../data/data.json';
 
@@ -8,34 +8,36 @@ const initialState = {
   name: '',
   email: '',
   telefono: '',
-  servicio: 0,
+  servicio: '',
   message: '',
 }
 export const Contact = (props) => {
-  const [{ name, email, telefono, servicio, message }, setState] = useState(initialState)
+  const [{ name, email, phone, service, message }, setState] = useState(initialState)
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
-  const clearState = () => setState({ ...initialState })
-
+  
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(name, email, message)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    e.preventDefault();    
+
+    emailjs.sendForm('service_67b5rgo', 'template_4mvfsdk', e.target, 'user_bZTNXZ2Nmnz6xB7iOB1W2')
+    .then((result) => {
+      e.target.reset();
+          swal({
+            icon: "success",
+            title: "Se ha enviado el correo!" 
+        });
+      },
+      (error) => {
+        swal({
+          icon: "warning",
+          dangerMode: true,
+          title: error
+        });
+      }
+    )
   }
   const data = JsonData.Contact;
   
@@ -47,13 +49,13 @@ export const Contact = (props) => {
             <div className='col-md-6'>
               {/* <div className='row'> */}
                 <div className='section-title'>
-                  <h2>Contactanos</h2>
+                  <h2>Contáctanos</h2>
                   <p>                  
                     Por favor llena el formulario para enviarnos un correo electrónico
                     y nos comunicaremos a la brevedad posible.
                   </p>
                 </div>
-                <form name='sentMessage' validate onSubmit={handleSubmit}>
+                <form name='sentMessage' validate="true" onSubmit={handleSubmit}>
                   <div className='row'>
                     <div className='col-md-6'>
                       <div className='form-group'>
@@ -105,7 +107,7 @@ export const Contact = (props) => {
                           <option value={0}>Seleccione Servicio</option>
                           {
                             data.services.map((d,i) => (
-                              <option key={i} value={i + 1}>{d}</option>
+                              <option key={i} value={d}>{d}</option>
                             ))
                           }
                         </select>
@@ -191,10 +193,10 @@ export const Contact = (props) => {
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
+            &copy; 2021 Built and Designed with React JS by <strong>Earl Wood</strong>
+            {/* <a href='http://www.templatewire.com' rel='nofollow'>
               TemplateWire
-            </a>
+            </a> */}
           </p>
         </div>
       </div>

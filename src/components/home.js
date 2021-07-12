@@ -18,8 +18,7 @@ const Home = () => {
     useEffect (() => {
         const div = document.getElementById(location.hash.replace('#', ''));
         const div2 = document.getElementById(location.pathname.replace('/', ''));
-        console.log(div);
-        console.log(div2);
+        
         
         if(div){
             window.scrollTo({
