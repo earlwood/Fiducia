@@ -19,7 +19,6 @@ const Home = () => {
         const div = document.getElementById(location.hash.replace('#', ''));
         const div2 = document.getElementById(location.pathname.replace('/', ''));
         
-        
         if(div){
             window.scrollTo({
             top: div.id === 'services' ? div.offsetTop - 80 : div.offsetTop - 50,

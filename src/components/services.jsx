@@ -7,9 +7,9 @@ export const Services = ({data}) => {
 
   const handleClick = (name) => {
     
-    // console.log(name);
+    console.log("name",name);
     name === 'Contabilidad'
-    ? history.push('/contabilidad')
+    ? history.push('/contabilidad',)
     : name === 'Créditos Hipotecarios'
       ? history.push('/hipotecarios')
       : name === 'Créditos Pyme' && history.push('/pymes');

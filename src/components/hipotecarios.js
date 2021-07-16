@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const Pymes = ({data}) => {
+const Hipotecarios = ({data}) => {
 
     const location = useLocation();
 
     useEffect (() => {
         const div = document.getElementById(location.pathname.replace('/', ''))
-        // console.log("pymes",div);
+        // console.log("hipotecarios",div);
         if(div){
             window.scrollTo({
             top: div.offsetTop - 30,
@@ -15,12 +15,12 @@ const Pymes = ({data}) => {
             })
         }
     }, [location])
-    // console.log("location pymes",location);
+    // console.log("location hipotecarios",location);
     return(
-        <div id='pymes' className='text-center'>
+        <div id='hipotecarios' className='text-center'>
             <div className='container'>
                 <div>
-                <h2>Créditos Pyme</h2>
+                <h2>Créditos Hipotecarios</h2>
                 
                 </div>
                 <div className='row'>
@@ -34,18 +34,18 @@ const Pymes = ({data}) => {
                                     
                                     <div className='p-2 d-flex justify-content-center'>
                                         <div className='col-lg-6 col-sm-6 col-xs-12'>
-                                            <ul className="d-flex flex-column">
+                                            <ul>
                                                 {d
-                                                ? d.pyme1.map((dd, ii) => (
+                                                ? d.hipo1.map((dd, ii) => (
                                                     <li key={`${dd}-${ii}`}>{dd}</li>
                                                     ))
                                                 : 'loading'}
                                             </ul>
                                         </div>
                                         <div className='col-lg-6 col-sm-6 col-xs-12'>
-                                            <ul className="d-flex flex-column">
+                                            <ul>
                                                 { data
-                                                ? d.pyme2.map((dd, ii) => (
+                                                ? d.hipo2.map((dd, ii) => (
                                                     <li key={`${dd}-${ii}`}> {dd}</li>
                                                     ))
                                                 : 'loading'}
@@ -68,7 +68,7 @@ const Pymes = ({data}) => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i className="fa fa-whatsapp pym"></i>
+                        <i className="fa fa-whatsapp hip"></i>
                     </a>
                     <a
                         href="tel:5218133873961"
@@ -76,7 +76,7 @@ const Pymes = ({data}) => {
                         style={{marginLeft: '20'}}
                         rel="noopener noreferrer"
                     >
-                        <i className="fa fa-phone pym"></i>
+                        <i className="fa fa-phone hip"></i>
                     </a>
                 </div>
                 
@@ -85,4 +85,4 @@ const Pymes = ({data}) => {
     )
 }
 
-export default Pymes;
+export default Hipotecarios;

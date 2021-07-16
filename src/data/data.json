@@ -59,80 +59,45 @@
                 "Adquisición de Consultorios Médicos.",
                 "Adquisición de Naves industriales."
             ]
-        },
+        }
+    ],
+    "Hipotecarios": [
         {
-            "icon": "fa fa-cart-arrow-down",
-            "img": "img/pymes/fact.jpg",
-            "name": "Facturación Electrónica Factureya",
-            "text": "Brindamos el servicio de auditoria para tu negocio, el cual consiste en realizar un análisis formal de las cuentas de tu empresa por parte de nuestra firma auditora externa, con el fin de comprobar que dicha contabilidad es coherente internamente, generando una imagen fiel de la situación financiera de tu organización.",
-            "pyme1": [
-                "Facturas electrónicas.",
-                "Recibos de honorarios.",
-                "Recibos de arrendamiento.",
-                "Recibos de nomina.",
-                "Recibos de pago."
+            "icon": "fa fa-wordpress",
+            "img": "img/pymes/pyme.png",
+            "name": "Hipotecarios",
+            "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
+            "hipo1": [
+                "Adquisición de vivienda.",
+                "Sustitución de hipoteca.",
+                "Crédito para Construcción o Remodelación."
             ],
-            "pyme2": [
-                "Notas de créditos.",
-                "Recibo de donativo.",
-                "Cartas Porte.",
-                "Notas de credito.",
-                "Formato para gasolineras."
+            "hipo2": [
+                "Crédito de liquidez.",
+                "Adquisición de terreno urbano.",
+                "Crédito Pyme."
             ]
         }
     ],
-    
-    "Testimonials": [{
-            "img": "img/testimonials/01.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
+    "Contabilidad": [
         {
-            "img": "img/testimonials/02.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "icon": "fa fa-wordpress",
+            "img": "img/pymes/pyme.png",
+            "name": "Contabilidad",
+            "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
+            "cont1": [
+                "Llevar los registros Contables.",
+                "Estados Financieros y reportes especiales.",
+                "Depuraciones Contables."
+            ],
+            "cont2": [
+                "Administración de empresas.",
+                "Contabilidades vía Internet.",
+                "Creación de Nuevas Empresas."
+            ]
         }
     ],
-    "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
-        },
-        {
-            "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
-        }, {
-            "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
-        },
-        {
-            "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
-        }
-    ],
+        
     "Contact": {
         "address": "Monterrey, Nuevo Leon.",
         "phone": "+52 81 3387 3961",
@@ -142,7 +107,6 @@
         "linkedin": "https://www.linkedin.com/company/fiducia-monterrey",
         "services":[
             "Contabilidad",
-            "Auditoría",
             "Creditos Hipotecarios",
             "Créditos Pyme"
         ]
