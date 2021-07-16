@@ -1,12 +1,12 @@
 {
     "Header": {
 
-        "title": "Servicios financieros a tu medida",
+        "title": "Soluciones Financieras a tu medida",
         "paragraph": "Conoce nuestros servicios contables, sistemas de facturación y la intermediación de créditos hipotecarios y Pymes"
 
     },
     "About": {
-        "paragraph": "Somos un equipo de profesionales con más de 15 años en el sector financiero, una firma de consultores capacitados en brindar servicios contables, de auditoria, de sistemas de facturación electrónica  y en la intermediación de créditos hipotecarios y Pymes. Tenemos alianzas estratégicas con las principales Instituciones Financieras de México, Sofomes, Arrendadoras, Notarias y  PACS, esto para brindarte la mejor experiencia de servicio.",
+        "paragraph": "Somos un equipo de profesionales con más de 15 años en el sector financiero, una firma de consultores capacitados en brindar servicios contables, de sistemas de facturación electrónica  y en la intermediación de créditos hipotecarios y Pymes. Tenemos alianzas estratégicas con las principales Instituciones Financieras de México, Sofomes, Arrendadoras, Notarias y  PACS, esto para brindarte la mejor experiencia de servicio.",
         "paragraph2": "Queremos superar tus expectativas.",
         "Why": [
             "Valores",
@@ -16,7 +16,7 @@
         "Why2": [
             "Agilidad",
             "Innovación",
-            "Calidad en nuestros servicios"
+            "Calidad"
         ],
         "Mision": "Ser una firma de consultores financieros que mejoren la forma de atender, entender y resolver problemas financieros.",
         "Vision": "Consolidarnos como la firma de consultores financieros con mayor alcance a nivel nacional, dando la mayor rentabilidad a nuestros clientes y manteniendo su patrimonio a salvo.",
@@ -27,21 +27,14 @@
         "img": "img/servicios/contabilidad.png",
         "name": "Contabilidad",
         "text": "Llevamos a cabo el registro contable y conciliaciones necesarias de tu negocio, para que no tengas ningún problema ante el fisco.",
-        "mas": ""
-    },
-    {
-        "icon": "fa fa-cart-arrow-down",
-        "img": "img/servicios/auditoria.jpg",
-        "name": "Auditoría",
-        "text": "Brindamos el servicio de auditoria para tu negocio, el cual consiste en realizar un análisis formal de las cuentas de tu empresa por parte de nuestra firma auditora externa, con el fin de comprobar que dicha contabilidad es coherente internamente, generando una imagen fiel de la situación financiera de tu organización.",
-        "mas": ""
+        "mas": "Leer Más..."
     },
     {
         "icon": "fa fa-cloud-download",
         "img": "img/servicios/creH.png",
-        "name": "Creditos Hipotecarios",
+        "name": "Créditos Hipotecarios",
         "text": "Te ayudamos a elegir el mejor crédito hipotecario en el mercado, para que tu elección sea la mejor y tu patrimonio se encuentre bien resguardado. FORMAMOS PARTE DE LA FAMILIA CREDITARIA, NUESTROS SERVICIOS NO TE CUESTAN",
-        "mas": ""
+        "mas": "Leer Más..."
     },
     {
         "icon": "fa fa-language",
@@ -59,12 +52,12 @@
             "pyme1": [
                 "Arrendamiento Financiero.",
                 "Factoraje a clientes.",
-                "Credito Simple."
+                "Crédito Simple y Revolvente."
             ],
             "pyme2": [
                 "Factoraje a proveedores.",
-                "Consultorio Medicos.",
-                "Naves industriales."
+                "Adquisición de Consultorios Médicos.",
+                "Adquisición de Naves industriales."
             ]
         },
         {

@@ -34,15 +34,15 @@ export const Header = ({data}) => {
         </div>
       </div> */}
 
-      <div className="card text-light" >
-        <img src="../img/intro-bg.jpg" className='img-fluid rounded w-auto'  alt="..."/>
+      <div className="card text-grey" >
+        <img src="../img/logo-handshake2.jpg" className='img-fluid rounded w-auto'  alt="..."/>
         <div className="card-img-overlay text-center">
           <h1 className='w-auto'>
             {data ? data.title : 'Loading'}
           </h1>
-          <p id='parag'>{data ? data.paragraph : 'Loading'}</p>
-          <p id='contactanos'>Contáctanos</p>
-          <div className="text-center">
+          {/* <p id='parag'>{data ? data.paragraph : 'Loading'}</p> */}
+          <div className="contacta">
+            <p id='contactanos'>Contáctanos</p>
             <a
               href="https://wa.me/528133873961"
               className="whatsapp_float btn-lg"

@@ -22,7 +22,7 @@ const Home = () => {
         
         if(div){
             window.scrollTo({
-            top: div.id === 'services' ? div.offsetTop - 70 : div.offsetTop - 50,
+            top: div.id === 'services' ? div.offsetTop - 80 : div.offsetTop - 50,
             behavior: 'smooth'
             })
         }
@@ -42,7 +42,7 @@ const Home = () => {
     }, [location])
 
     return(
-        <div className='mt-5'>
+        <div id="nav-margin">
             <Header data={landingPageData.Header} />
             <About data={landingPageData.About} />
             <Services data={landingPageData.Services} />

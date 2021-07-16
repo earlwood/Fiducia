@@ -7,7 +7,7 @@ const Pymes = ({data}) => {
 
     useEffect (() => {
         const div = document.getElementById(location.pathname.replace('/', ''))
-        console.log(div);
+        // console.log(div);
         if(div){
             window.scrollTo({
             top: div.offsetTop - 50,
@@ -20,7 +20,7 @@ const Pymes = ({data}) => {
         <div id='pymes' className='text-center'>
             <div className='container'>
                 <div>
-                <h2>Pymes</h2>
+                <h2>Créditos Pyme</h2>
                 
                 </div>
                 <div className='row'>

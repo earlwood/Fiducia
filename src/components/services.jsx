@@ -5,8 +5,15 @@ export const Services = ({data}) => {
   
   const history = useHistory();
 
-  const handleClick = () => {
-    history.push('/pymes');
+  const handleClick = (name) => {
+    
+    // console.log(name);
+    name === 'Contabilidad'
+    ? history.push('/contabilidad')
+    : name === 'Créditos Hipotecarios'
+      ? history.push('/hipotecarios')
+      : name === 'Créditos Pyme' && history.push('/pymes');
+    // history.push('/pymes');
   }
 
   return (
@@ -18,14 +25,14 @@ export const Services = ({data}) => {
         <div className='row'>
           {data
             ? data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-6'>
+                <div key={`${d.name}-${i}`} className='col-sm-12 col-md-12 col-lg-4'>
                   {' '}
                   <img className='img-service' src={d.img} alt="..." />
                   <div className='service-desc'>
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>
                     <p>{d.mas !== '' 
-                        ? <button className='btn btn-custom-services' onClick={handleClick}>{d.mas}</button>
+                        ? <button className='btn btn-custom-services' onClick={()=> handleClick(d.name)}>{d.mas}</button>
                         : '' 
                       }</p>
                   </div>
