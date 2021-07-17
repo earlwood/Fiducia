@@ -22,7 +22,7 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();    
 
-    emailjs.sendForm('service_67b5rgo', 'template_4mvfsdk', e.target, 'user_bZTNXZ2Nmnz6xB7iOB1W2')
+    emailjs.sendForm('service_keuoffo', 'template_fa2tssc', e.target, 'user_aqMDF8dPbXlOZjkbA08ah')
     .then((result) => {
       e.target.reset();
           swal({
